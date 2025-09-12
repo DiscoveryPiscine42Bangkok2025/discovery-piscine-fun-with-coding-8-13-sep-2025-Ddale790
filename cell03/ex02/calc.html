@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exercise 02 </title>
+  <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Calculator </h1>
+
+    <form id="calc-form" autocomplete="off" novalidate>
+      <label for="left" class="visually-hidden">Left operand</label>
+      <input id="left" name="left" type="text" inputmode="numeric" placeholder="Left (>= 0)" pattern="^[0-9]+$" />
+
+      <label for="op" class="visually-hidden">Operator</label>
+      <select id="op" name="op" aria-label="Operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+      </select>
+
+      <label for="right" class="visually-hidden">Right operand</label>
+      <input id="right" name="right" type="text" inputmode="numeric" placeholder="Right (>= 0)" pattern="^[0-9]+$" />
+
+      <input type="submit" value="Try me!" />
+    </form>
+
+  </div>
+
+  <script src="calc.js"></script>
+</body>
+</html>
