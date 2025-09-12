@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exercise 00 — Change background</title>
+  <link rel="stylesheet" href="background.css" />
+</head>
+<body>
+  <main class="wrap">
+    <button id="changer" type="button">Change background</button>
+    <p id="code" class="code" aria-live="polite">Current: #FFFFFF</p>
+  </main>
+
+  <script>
+    const btn = document.getElementById('changer');
+    const code = document.getElementById('code');
+
+    function randomHex() {
+      return '#' + Math.floor(Math.random() * 0xFFFFFF)
+        .toString(16).padStart(6, '0').toUpperCase();
+    }
+
+    function changeBackground() {
+      const c = randomHex();
+      document.body.style.backgroundColor = c;
+      code.textContent = 'Current: ' + c;
+    }
+
+    btn.addEventListener('click', changeBackground);
+
+    changeBackground();
+  </script>
+</body>
+</html>
