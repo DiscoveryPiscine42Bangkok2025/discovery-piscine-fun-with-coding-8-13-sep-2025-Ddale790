@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exercise 03 — User profile card</title>
+  <link rel="stylesheet" href="card.css" />
+</head>
+<body>
+  <main class="page">
+    <article class="card">
+      <h2 class="card__title">User profile card</h2>
+
+      <table class="card__table" role="presentation" aria-label="profile layout">
+        <tr>
+          <td class="cell--avatar" colspan="2">
+            <img class="avatar" src="https://blog.wu.ac.th/wp-content/uploads/2023/01/8.jpg" alt="Profile picture" />
+          </td>
+        </tr>
+
+        <tr>
+          <td class="cell--login" colspan="2">
+            <div class="login">DALE</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="cell--tagline" colspan="2">
+            <p class="tagline">Design • Code</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="cell--social" colspan="2">
+            <div class="social">
+              <a href="#" aria-label="Instagram">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="" />
+              </a>
+              <a href="#" aria-label="X (Twitter)">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="" />
+              </a>
+              <a href="#" aria-label="Facebook">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="" />
+              </a>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="cell--cta" colspan="2">
+            <a class="btn" href="mailto:you@example.com">Contact</a>
+          </td>
+        </tr>
+      </table>
+    </article>
+  </main>
+</body>
+</html>

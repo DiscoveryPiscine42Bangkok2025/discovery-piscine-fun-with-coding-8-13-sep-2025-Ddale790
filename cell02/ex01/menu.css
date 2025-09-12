@@ -1,0 +1,104 @@
+* { box-sizing: border-box; }
+:root{
+  --bar: #150156;
+  --bar-hover: #2f39aa;
+  --ink: #000000;
+  --paper: #fff;
+  --ring: #7cc1ff;
+  --radius: 12px;
+  --shadow: 0 12px 24px rgba(0,0,0,.18), 0 2px 8px rgba(0,0,0,.12);
+  --transition: 160ms ease;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  color: var(--ink);
+}
+.container { max-width: 1100px; margin: 28px auto; padding: 0 16px; }
+h1 { margin: 0 0 14px; }
+
+ul { list-style: none; padding: 0; margin: 0; }
+a { text-decoration: none; display: block; padding: 14px 16px; }
+
+.main-menu { background: var(--bar); border-radius: var(--radius); }
+.menu-root {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 0 6px;
+}
+.menu-item { position: relative; }
+.menu-item > a { color: #fff; border-radius: 10px; }
+.menu-item > a:hover,
+.menu-item > a:focus-visible { background: var(--bar-hover); outline: none; }
+
+.has-caret::after {
+  content: "▼";
+  font-size: .8em;
+  margin-left: .45ch;
+  transition: transform var(--transition);
+}
+.dropdown:hover .has-caret::after,
+.dropdown:focus-within .has-caret::after { transform: rotate(180deg); }
+
+.sub-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 6px;
+  min-width: 200px;
+  background: var(--paper);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  z-index: 1000;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  pointer-events: none;
+  transition: opacity var(--transition), transform var(--transition), visibility var(--transition);
+}
+.dropdown:hover .sub-menu,
+.dropdown:focus-within .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.sub-menu::before {
+  content: "";
+  position: absolute;
+  top: -8px; left: 16px;
+  border: 8px solid transparent;
+  border-bottom-color: var(--paper);
+  filter: drop-shadow(0 -1px 0 rgba(0,0,0,.08));
+}
+
+.sub-menu li + li { border-top: 1px solid #eee; }
+.sub-menu a {
+  color: var(--ink);
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+.sub-menu a:hover,
+.sub-menu a:focus-visible {
+  background: #f6f6f6;
+  box-shadow: 0 0 0 3px var(--ring);
+  outline: 2px solid transparent;
+}
+
+@media (max-width: 640px) {
+  .menu-root { flex-wrap: wrap; padding: 4px; }
+  .menu-item { flex: 1 1 100%; }
+  .menu-item > a { border-radius: 8px; }
+  .sub-menu {
+    position: static;
+    margin: 4px 0 8px;
+    box-shadow: none;
+    border: 1px solid #e8e8e8;
+    opacity: 1; visibility: visible; transform: none; pointer-events: auto;
+  }
+  .sub-menu::before { display: none; }
+}
+  
