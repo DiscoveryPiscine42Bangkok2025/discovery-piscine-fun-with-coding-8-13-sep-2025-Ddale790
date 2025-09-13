@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Portfolio | DALE</title>
+  <link rel="stylesheet" href="CV-N.css" />
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+          crossorigin="anonymous"></script>
+
+  <script src="CV-N.js" defer></script>
+</head>
+<body>
+
+  <nav class="nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">Portfolio</a>
+      <div class="menu" role="tablist">
+        <a href="#home" class="active" role="tab">Home</a>
+        <a href="#about" role="tab">About</a>
+        <a href="#activity" role="tab">Activity</a>
+        <a href="#contact" role="tab">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" aria-label="Home">
+    <div class="wrap hero">
+      <div class="hero-card">
+        <span class="pill">Hello</span>
+        <h1>ฉันชื่อ <span class="accent">New</span> เป็นนักศึกษา <em>Digital Technology &amp; Innovation</em></h1>
+        <p class="muted">
+        </p>
+        <div class="cta-row">
+          <a class="btn" href="#showcase">ดูผลงาน</a>
+          <a class="btn btn-light" href="#contact">ติดต่อ</a>
+        </div>
+      </div>
+
+      <figure class="hero-portrait" aria-label="Portrait / Cover">
+        <img src="https://img2.pic.in.th/pic/38046.jpg" alt="38046" border="0">
+      </figure>
+    </div>
+  </section>
+
+  <section id="about" aria-label="About">
+    <div class="wrap">
+      <h2>About Me</h2>
+      <p class="muted"> </p>
+
+      <div class="about-grid">
+        <div class="card">
+          <h3>ประวัติย่อ</h3>
+          <ul class="list">
+            <li><span>ชื่อ</span><strong>Suphanan Thanyajaroen (New)</strong></li>
+            <li><span>สถาบัน</span><strong>สจล. (KMITL)</strong></li>
+            <li><span>สาขา</span><strong>เทคโนโลยีดิจิทัลและนวัตกรรมบูรณาการ</strong></li>
+            <li><span>อีเมล</span><strong><a href="mailto:66051193@kmitl.ac.th">66051193@kmitl.ac.th</a></strong></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>งานอดิเรก</h3>
+          <ul class="list">
+            <li><span></span> นอน</li>
+            <li><span></span> เล่นเกม</li>
+            <li><span></span> อ่านนิยาย</li>
+            <li><span></span> กิน(ของอร่อย)</li>
+    </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="activity" aria-label="Activity">
+    <div class="wrap">
+      <h2>กิจกรรมที่เคยเข้าร่วม</h2>
+
+      <div class="grid" id="gallery">
+        <figure class="tile" data-title="ดูงานKUBOTAFARM">
+          <img src="https://img5.pic.in.th/file/secure-sv1/TCS_7383-1.jpg" alt="TCS 7383 (1)" border="0">
+          <figcaption class="cap">ดูงานKUBOTAFARM</figcaption>
+        </figure>
+        <figure class="tile" data-title="ดูงานKUBOTAFARM">
+          <img src="https://img5.pic.in.th/file/secure-sv1/TCS_7588-1.jpg" alt="TCS 7588 (1)" border="0">
+          <figcaption class="cap">ดูงานKUBOTAFARM</figcaption>
+        </figure>
+        <figure class="tile" data-title="ดูงานKUBOTAFARM">
+          <img src="https://img2.pic.in.th/pic/TCS_7479-1.jpg" alt="TCS 7479 (1)" border="0">
+          <figcaption class="cap">ดูงานKUBOTAFARM</figcaption>
+        </figure>
+        <figure class="tile" data-title="กิจกรรมรับน้อง K-dai">
+          <img src="https://img5.pic.in.th/file/secure-sv1/LINE_ALBUM_K-DAI-WELCOME-2025_250912_1.jpg" alt="LINE ALBUM K DAI WELCOME 2025 250912 1" border="0">
+          <figcaption class="cap">กิจกรรมรับน้อง K-dai</figcaption>
+        </figure>
+        <figure class="tile" data-title="กิจกรรม STOP Sexual Harassment">
+          <img src="https://img2.pic.in.th/pic/43040.jpg" alt="43040" border="0">
+          <figcaption class="cap">กิจกรรม STOP Sexual Harassment</figcaption>
+        </figure>
+        <figure class="tile" data-title="กิจกรรม Job Fair">
+          <img src="https://img2.pic.in.th/pic/5F1E5BC0-CFF7-48E3-9BC9-A7129C086CBB_3555E434-0FD9-48A8-A37E-5C6ECE194EC6_encrypted.jpg" alt="5F1E5BC0 CFF7 48E3 9BC9 A7129C086CBB 3555E434 0FD9 48A8 A37E 5C6ECE194EC6 encrypted" border="0">
+          <figcaption class="cap">กิจกรรม Job Fair</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog" aria-label="Image viewer">
+    <span class="close" aria-label="Close">×</span>
+    <img alt="" />
+    <div class="lbcap" id="lbcap"></div>
+  </div>
+
+
+<section id="contact" aria-label="Contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+  
+      <div class="social-grid">
+
+        <a class="social-card" href="https://www.instagram.com/nnxwzp04/" target="_blank" rel="noopener">
+          <div class="icon" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="" /></div>
+          <div class="meta">
+            <strong>Instagram</strong>
+            <span class="muted">@DALE</span>
+          </div>
+        </a>
+  
+        <a class="social-card" href="https://www.facebook.com/new.suphanan.992084" target="_blank" rel="noopener">
+          <div class="icon" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="" /></div>
+          <div class="meta">
+            <strong>Facebook</strong>
+            <span class="muted">facebook.com/DALE</span>
+          </div>
+        </a>
+  
+        <a class="social-card" href="mailto:66051193@kmitl.ac.th">
+          <div class="icon" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/minutemailer.svg" alt="Email" /></div>
+          <div class="meta">
+            <strong>Email</strong>
+            <span class="muted">66051193@kmitl.ac.th</span>
+          </div>
+        </a>
+ 
+        <a class="social-card" href="https://github.com/DiscoveryPiscine42Bangkok2025/discovery-piscine-fun-with-coding-8-13-sep-2025-Ddale790/tree/main" target="_blank" rel="noopener">
+            <div class="icon" aria-hidden="true">
+              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" />
+            </div>
+            <div class="meta">
+              <strong>GitHub</strong>
+              <span class="muted">github.com/DALE</span>
+            </div>
+          </a>
+    </div>
+  </section>
+
+  <button class="to-top" id="toTop" aria-label="กลับขึ้นด้านบน">↑</button>
+</body>
+</html>
+

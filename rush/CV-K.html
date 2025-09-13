@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Portfolio | KaopunKami</title>
+  <link rel="stylesheet" href="CV-K.css" />
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+          crossorigin="anonymous"></script>
+
+  <script src="CV-K.js" defer></script>
+</head>
+<body>
+
+  <nav class="nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">Portfolio</a>
+      <div class="menu" role="tablist">
+        <a href="#home" class="active" role="tab">Home</a>
+        <a href="#about" role="tab">About</a>
+        <a href="#activity" role="tab">Activity</a>
+        <a href="#contact" role="tab">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" aria-label="Home">
+    <div class="wrap hero">
+      <div class="hero-card">
+        <span class="pill">Hello</span>
+        <h1>ฉันชื่อ <span class="accent">Kaopun</span> เป็นนักศึกษา <em>Digital Technology &amp; Innovation</em></h1>
+        <p class="muted">
+        </p>
+        <div class="cta-row">
+          <a class="btn" href="#showcase">ดูผลงาน</a>
+          <a class="btn btn-light" href="#contact">ติดต่อ</a>
+        </div>
+      </div>
+
+      <figure class="hero-portrait" aria-label="Portrait / Cover">
+        <img src="https://img5.pic.in.th/file/secure-sv1/IMG_0910b1de70074ddca64c.jpg" alt="IMG 0910" border="0">
+      </figure>
+    </div>
+
+
+  <section id="about" aria-label="About">
+    <div class="wrap">
+      <h2>About Me</h2>
+      <p class="muted"> </p>
+
+      <div class="about-grid">
+        <div class="card">
+          <h3>ประวัติย่อ</h3>
+          <ul class="list">
+            <li><span>ชื่อ</span><strong>Rathanon Nilsalub(Kaopun)</strong></li>
+            <li><span>สถาบัน</span><strong>สจล. (KMITL)</strong></li>
+            <li><span>สาขา</span><strong>เทคโนโลยีดิจิทัลและนวัตกรรมบูรณาการ</strong></li>
+            <li><span>อีเมล</span><strong><a href="mailto:66050504@kmitl.ac.th">66050504@kmitl.ac.th</a></strong></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>งานอดิเรก</h3>
+          <ul class="list">
+            <li><span></span> เล่นเกม</li>
+            <li><span></span> เที่ยวเล่น</li>
+            <li><span></span> ตามidol</li>
+            <li><span></span> กินของอร่อย</li>
+    </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="activity" aria-label="Activity">
+    <div class="wrap">
+      <h2>กิจกรรมที่เคยเข้าร่วม</h2>
+
+      <div class="grid" id="gallery">
+        <figure class="tile" data-title="ดูงานKUBOTAFARM">
+          <img src="https://img5.pic.in.th/file/secure-sv1/TCS_7538-1.jpg" alt="TCS 7538 (1)" border="0">
+          <figcaption class="cap">ดูงานKUBOTAFARM</figcaption>
+        </figure>
+        <figure class="tile" data-title="ดูงานKUBOTAFARM">
+          <img src="https://img2.pic.in.th/pic/TCS_7360-1.jpg" alt="TCS 7360 (1)" border="0">
+          <figcaption class="cap">ดูงานKUBOTAFARM</figcaption>
+        </figure>
+        <figure class="tile" data-title="ดูงานKUBOTAFARM">
+          <img src="https://img2.pic.in.th/pic/TCS_7427-1.jpg" alt="TCS 7427 (1)" border="0">
+          <figcaption class="cap">ดูงานKUBOTAFARM</figcaption>
+        </figure>
+        <figure class="tile" data-title="กิจกรรมรับน้อง K-dai 2025">
+          <img src="https://img2.pic.in.th/pic/LINE_ALBUM_K-DAI-WELCOME-2025_250912_2.jpg" alt="LINE ALBUM K DAI WELCOME 2025 250912 2" border="0">
+          <figcaption class="cap">กิจกรรมรับน้อง K-dai 2025</figcaption>
+        </figure>
+        <figure class="tile" data-title="กิจกรรมรับน้อง K-dai 2024">
+          <img src="https://img5.pic.in.th/file/secure-sv1/LINE_ALBUM_K-DAI-WELCOME-2025_250912_1.jpg" alt="LINE ALBUM K DAI WELCOME 2025 250912 1" border="0">
+          <figcaption class="cap">กิจกรรมรับน้อง K-dai 2024</figcaption>
+        </figure>
+        <figure class="tile" data-title="ดูงานKUBOTAFARM">
+          <img src="https://img2.pic.in.th/pic/TCS_7380-1.jpg" alt="TCS 7380 (1)" border="0">
+          <figcaption class="cap">ดูงานKUBOTAFARM</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog" aria-label="Image viewer">
+    <span class="close" aria-label="Close">×</span>
+    <img alt="" />
+    <div class="lbcap" id="lbcap"></div>
+  </div>
+
+
+<section id="contact" aria-label="Contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+  
+      <div class="social-grid">
+
+        <a class="social-card" href="https://www.instagram.com/kaopunkami/" target="_blank" rel="noopener">
+          <div class="icon" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="" /></div>
+          <div class="meta">
+            <strong>Instagram</strong>
+            <span class="muted">@KaopunKami</span>
+          </div>
+        </a>
+  
+        <a class="social-card" href="https://www.facebook.com/kaopun.rathanon/" target="_blank" rel="noopener">
+          <div class="icon" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="" /></div>
+          <div class="meta">
+            <strong>Facebook</strong>
+            <span class="muted">facebook.com/kaopun.rathanon</span>
+          </div>
+        </a>
+  
+        <a class="social-card" href="mailto:66050504@kmitl.ac.th">
+          <div class="icon" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/minutemailer.svg" alt="Email" /></div>
+          <div class="meta">
+            <strong>Email</strong>
+            <span class="muted">66050504@kmitl.ac.th</span>
+          </div>
+        </a>
+ 
+        <a class="social-card" href="https://github.com/DiscoveryPiscine42Bkk/discovery-piscine-fun-with-coding-8-13-sep-2025-kaopunkami" target="_blank" rel="noopener">
+            <div class="icon" aria-hidden="true">
+              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" />
+            </div>
+            <div class="meta">
+              <strong>GitHub</strong>
+              <span class="muted">github.com/kaopunkami</span>
+            </div>
+          </a>
+    </div>
+  </section>
+
+  <button class="to-top" id="toTop" aria-label="กลับขึ้นด้านบน">↑</button>
+</body>
+</html>
+
